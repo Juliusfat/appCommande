@@ -1,0 +1,152 @@
+{
+  "user": [
+    {
+      "id": 8,
+      "email": "melindafrederick@cytrak.com",
+      "firstName": "Gillespie",
+      "lastName": "Hensley",
+      "role": "manager",
+      "password": "dolore"
+    },
+    {
+      "id": 3,
+      "email": "gillespiehensley@cytrak.com",
+      "firstName": "Norton",
+      "lastName": "Woods",
+      "role": "acheteur",
+      "password": "laborum"
+    },
+    {
+      "id": 1,
+      "email": "nortonwoods@cytrak.com",
+      "firstName": "Bertie",
+      "lastName": "Myers",
+      "role": "manager",
+      "password": "amet"
+    },
+    {
+      "id": 9,
+      "email": "bertiemyers@cytrak.com",
+      "firstName": "Lorena",
+      "lastName": "Young",
+      "role": "manager",
+      "password": "ad"
+    },
+    {
+      "id": 6,
+      "email": "lorenayoung@cytrak.com",
+      "firstName": "Lauren",
+      "lastName": "Newman",
+      "role": "acheteur",
+      "password": "do"
+    },
+    {
+      "id": 5,
+      "email": "laurennewman@cytrak.com",
+      "firstName": "West",
+      "lastName": "Macdonald",
+      "role": "acheteur",
+      "password": "culpa"
+    },
+    {
+      "id": 14,
+      "email": "westmacdonald@cytrak.com",
+      "firstName": "Cathryn",
+      "lastName": "Knowles",
+      "role": "collaborateur",
+      "password": "reprehenderit"
+    }
+  ],
+  "purchase": [
+    {
+      "id": 6,
+      "motif": "huffirwin@eternis.com",
+      "quantite": 2,
+      "produit": "cable mac",
+      "lien": "http/amazon.fr",
+      "commentaire_demandeur": "irure reprehenderit id",
+      "idUser": 15,
+      "commentaire_acheteur": "ipsum in officia",
+      "date_validation": "2018-05-30",
+      "etat": "commandée",
+      "date_creation": "2015-10-14"
+    },
+    {
+      "id": 10,
+      "motif": "hardingbrown@eternis.com",
+      "quantite": 1,
+      "produit": "cable Hdmi",
+      "lien": "http/amazon.fr",
+      "commentaire_demandeur": "culpa ad consectetur",
+      "idUser": 19,
+      "commentaire_acheteur": "cupidatat sint laborum",
+      "date_validation": "2017-09-05",
+      "etat": "validée",
+      "date_creation": "2016-05-04"
+    },
+    {
+      "id": 8,
+      "motif": "richmondsexton@eternis.com",
+      "quantite": 3,
+      "produit": "lampe",
+      "lien": "http/amazon.fr",
+      "commentaire_demandeur": "qui ullamco sit",
+      "idUser": 15,
+      "commentaire_acheteur": "culpa dolor irure",
+      "date_validation": "2018-07-21",
+      "etat": "commandée",
+      "date_creation": "2018-08-31"
+    },
+    {
+      "id": 5,
+      "motif": "wendijensen@eternis.com",
+      "quantite": 4,
+      "produit": "écran",
+      "lien": "http/amazon.fr",
+      "commentaire_demandeur": "amet incididunt est",
+      "idUser": 11,
+      "commentaire_acheteur": "ut magna ea",
+      "date_validation": "2015-09-26",
+      "etat": "en attente",
+      "date_creation": "2018-05-31"
+    },
+    {
+      "id": 6,
+      "motif": "searsbattle@eternis.com",
+      "quantite": 3,
+      "produit": "clavier",
+      "lien": "http/amazon.fr",
+      "commentaire_demandeur": "aute sint proident",
+      "idUser": 19,
+      "commentaire_acheteur": "deserunt in nostrud",
+      "date_validation": "2018-10-29",
+      "etat": "commandée",
+      "date_creation": "2017-01-02"
+    },
+    {
+      "id": 12,
+      "motif": "frazierwashington@eternis.com",
+      "quantite": 2,
+      "produit": "souris",
+      "lien": "http/amazon.fr",
+      "commentaire_demandeur": "sit do tempor",
+      "idUser": 8,
+      "commentaire_acheteur": "elit elit fugiat",
+      "date_validation": "2014-07-14",
+      "etat": "validée",
+      "date_creation": "2017-09-21"
+    },
+    {
+      "produit": "souris",
+      "quantite": 2,
+      "motif": "échange de matériel",
+      "lien": "https://www.amazon.fr/inphic-Rechargeable-Optique-Ordinateur-Portable/dp/B0757LNVBT/ref=sr_1_1_sspa?ie=UTF8&qid=1544092497&sr=8-1-spons&keywords=souris+sans+fil+pour+mac&psc=1",
+      "idUser": 2,
+      "commentaire_acheteur": "",
+      "date_validation": "",
+      "etat": "en attente",
+      "date_creation": "6/11/2018",
+      "id": 13
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<div class='container'>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>Saisir une nouvelle demande</h2>
+      <form [formGroup]="purchaseForm" (ngSubmit)="onSavePurchase()">
+        <div class="form-group">
+          <label for="produit">Produit</label>
+          <input type="text" id="produit" class="form-control" formControlName="produit">
+        </div>
+        <div class="form-group">
+          <label for="quantite">Quantité</label>
+          <input type="number" id="quantite" class="form-control" formControlName="quantite">
+        </div>
+        <div class="form-group">
+          <label for="motif">Motif</label>
+          <input type="text" id="motif" class="form-control" formControlName="motif">
+        </div>
+        <div class="form-group">
+          <label for="lien">Lien</label>
+          <input type="text" id="lien" class="form-control" formControlName="lien">
+        </div>
+        <button class="btn btn-success" [disabled]="purchaseForm.invalid" type="submit">Valider
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

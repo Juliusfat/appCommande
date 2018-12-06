@@ -1,0 +1,25 @@
+<div class="container">
+    <input class="form-control" type="text" [(ngModel)]="query" placeholder="... filtre" > 
+    <table *ngIf="purchases" class="table">
+            <thead>
+                    <tr>
+                      <th scope="col">Ref</th>
+                      <th scope="col">Produit</th>
+                      <th scope="col">Motif</th>
+                      <th scope="col">Date création</th>
+                    </tr>
+            </thead>
+            <tbody>
+                    <tr *ngFor="let purchase of purchases | filter:query">
+                        <td>{{purchase.id}}</td>
+                        <td>{{purchase.produit}}</td>
+                        <td>{{purchase.motif}}</td>
+                        <td>{{purchase.date_creation}}</td>
+                        <button class='btn btn-warning'>Valider</button>
+                    </tr>
+            </tbody>
+        <!--<li class="list-group-item" *ngFor="let purchase of purchases"> {{ purchase.id}}--{{purchase.motif}}</li>
+        -->
+    </table>
+
+</div>
