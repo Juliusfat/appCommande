@@ -10,26 +10,27 @@ var connection = mysql.createConnection({
     host     : "localhost",
     user     : "root",
     password : "",  
-    database : "testmean",
-    socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
+    database : "testmean"
+    //socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
 });
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 var port = 4000;
 
 //on envoi toutes les demandes
 app.get('/allDemand' , function(req , res) {
-      
     //set headers
     res.setHeader( 'Content-Type', 'application/json; charset=utf8')
     
+    //prepare la requete
     var sql = "SELECT * from demande"
     
     // on envoie la requete et on recupère les données
     connection.query( sql , function(err ,rows , fileds){
-        if(err) {
+        if(err) {  // en cas d'erreur
             connection.end();
             throw( err );
         }
@@ -40,11 +41,9 @@ app.get('/allDemand' , function(req , res) {
             result.push(row);
         });
         res.json(rows);
-        console.log(rows);
+        //console.log(rows);
 
     });
-
-
 });
 
 // on envoi tout les utilisateurs
@@ -71,7 +70,10 @@ app.get('/allUser' , function(req , res){
 });
 
 // on post une nouvelle demande
-app.post('/demand' ,  function(req , res) {
+app.post('/form' ,  function(req , res) {
+
+    
+
     res.send('Message posté')
 });
 
