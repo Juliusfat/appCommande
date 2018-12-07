@@ -4,9 +4,10 @@ export interface Purchase {
     quantite: number;
     produit: string;
     lien: string;
-    idUser: number;
+    idUtilsateur: number;
     commentaire_acheteur: string;
     date_validation: string;
-    etat: string;
+    etat_commande: string;
     date_creation: string;
+    commentaire_demande: string;
 }

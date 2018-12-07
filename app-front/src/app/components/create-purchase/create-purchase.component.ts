@@ -25,22 +25,25 @@ export class CreatePurchaseComponent implements OnInit {
     });
   }
 
-  onSavePurchase(){
+  onSavePurchase() {
     const date = new Date();
-    const dateJour :string  = date.getDate()+'/'+date.getMonth()+'/'+date.getFullYear();
-    this.purchase = {... this.purchaseForm.value, 
-      idUser : 2, 
-      commentaire_acheteur:'',
-      date_validation:'',
-      etat : "en attente", 
-      date_creation : dateJour};
-    console.log(this.purchase);
-    this.purchaseService.addPurchase(this.purchase).subscribe(()=>{
-      this.purchaseForm.reset();
-      this.router.navigate(['/dashboard']);
-    })
-    this.purchaseForm.reset();
+    const dateJour: string  = date.getDate() + '/' + date.getMonth() + '/' + date.getFullYear();
 
+    this.purchase = {... this.purchaseForm.value,
+      idUtilsateur : 2,
+      commentaire_acheteur: '',
+      date_validation: '',
+      etat_commande : 'en attente',
+      date_creation : dateJour,
+      commentaire_demande: ''
+    };
+    console.log(this.purchase);
+    this.purchaseService.addPurchase(this.purchase).subscribe( () => {
+      this.purchaseForm.reset();
+      console.log("ok");
+      this.router.navigate(['/dashboard']);
+    });
+    //this.purchaseForm.reset();
   }
 
 }
